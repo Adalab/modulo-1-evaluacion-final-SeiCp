@@ -5,8 +5,16 @@
   }
 
   :root {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .title {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 42px;
   }
