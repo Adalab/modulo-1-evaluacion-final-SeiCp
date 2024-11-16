@@ -3,11 +3,69 @@
 @import 'core/variables';
 @import 'core/layout';
 
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.menu-btn {
+    background-color: #0271bc;
+    border: none;
+    cursor: pointer;
+    width: 37.1px;
+    height: 22px;
+    flex-grow: 0;
+    margin: 0 100px 278.3px 0;
+    padding: 0%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+}
+
 .hero {
     height: 100vh;
     background-image: url('../images/cover.jpeg');
     background-size: cover;
-    
-  
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
 
+.hero-content .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.scroll-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.scroll-icon {
+    width: 24px;
+    height: auto;
+    animation: scroll-bounce 2s infinit;
 }
