@@ -1,12 +1,12 @@
 @import 'core/_reset.scss';
-@import 'core/typography';
 @import 'core/variables';
-@import 'core/layout';
+@import 'core/typography';
+
 
 .navbar {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     z-index: 1000;
 }
 
@@ -14,22 +14,29 @@
     background-color: #0271bc;
     border: none;
     cursor: pointer;
-    width: 37.1px;
-    height: 22px;
-    flex-grow: 0;
-    margin: 0 100px 278.3px 0;
-    padding: 0%;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px;
+    padding: 8px;
 }
 
 .menu-icon {
-    width: 24px;
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+    position: relative;
+    display: block;
+}
+
+.menu-line {
+    width: 80%;
     height: 2px;
     background-color: #ffffff;
-    display: block;
-    position: relative;
+    border-radius: 1px;
 }
 
 .hero {
@@ -38,34 +45,68 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    text-align: center;
-    position: relative;
+    padding: 20px;
     z-index: 1;
 }
 
-.hero-content .title {
+.hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    color: white;
+    height: 100vh;
+    text-align: center;
+    margin-top: 300px;
+
+}
+
+.title {
+    font-family: $font-title;
+    font-size: $font-size-title;
+    font-weight: $font-weight-title;
+    color: $color-title;
+    line-height: 55px;
     text-transform: uppercase;
+    margin: 0 auto;
+    line-height: 55px;
+}
+
+.subtitle {
+    font-family: $font-subtitle;
+    font-size: $font-size-subtitle;
+    font-weight: $font-weight-subtitle;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 19px;
+
 }
 
 .scroll-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
+    display: flex; /* Centra el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 30px; /* Mueve el botón cerca del final */
+  }
 
-.scroll-icon {
-    width: 24px;
-    height: auto;
-    animation: scroll-bounce 2s infinit;
-}
+  .circle-btn {
+    background-color: white; 
+    border: none; 
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+    overflow: hidden;
+  }  
+
+  .scroll-icon {
+    width: 30px; 
+    height: auto; 
+  }
+
