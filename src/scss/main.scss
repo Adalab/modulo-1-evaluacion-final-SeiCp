@@ -102,3 +102,68 @@
     height: auto;
 }
 
+.tips {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+
+    &__subtitle {
+        font-family: $font-subtitle;
+        font-size: 14px;
+        font-weight: $font-weight-subtitle;
+        line-height: $line-height-p;
+        color: #8ccbea;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: $font-weight-title;
+        line-height: 30px;
+        color: black;
+        margin: 0;
+        margin-bottom: 20px; 
+    }
+
+    &__text {
+        font-family: $font-p;
+        font-size: $font-size-p;
+        font-weight: $font-weight-p;
+        line-height: $line-height-p;
+        color: #4a4a4a;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        font-family: $font-subtitle;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #f26002;
+        background-color: #ffffff;
+        border: 2px solid #f26002;
+        border-radius: 20px;
+        padding: 8px 24px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    
+        &:hover {
+            background-color: #f26002;
+            color:#ffffff
+        }
+    }
+
+}
+
+.reasons{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    row-gap: 24px;
+    justify-items: center;
+    padding: 20px;
+    background-color: #eff9ff;
+}
