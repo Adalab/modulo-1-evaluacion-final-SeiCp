@@ -86,7 +86,7 @@
         gap: 1rem;
         padding: 2rem 40px;
         padding-inline: 40px;
-        margin-block: 30px;
+
 
         @media (min-width: 900px) {
             grid-template-columns: repeat(3, 1fr);
@@ -125,4 +125,94 @@
 
 .envio {
     background-color: #ff975a;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__article {
+
+        &__img {
+            height: 6rem;
+            padding-bottom: 10px;
+        }
+
+        &__subtitle {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+
+            @media (min-width: 900px) {
+                font-size: 1.8rem;
+            }
+
+            @media (min-width: 1728px) {
+                font-size: 2.25rem;
+            }
+        }
+
+        &__text {
+            font-size: 0.7 rem;
+            font-weight: 400;
+
+            @media (min-width: 1728px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__btn {
+        text-decoration: underline;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}
+
+.disfruta {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-top: 70px;
+    background-color: #f0ebe5;
+
+    &__article {
+        padding-left: 30px;
+        text-align: center;
+
+        &__subtitle {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        &__text {
+            font-size: 0.7 rem;
+            font-weight: 400;
+        }
+
+        &__btn {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            color: white;
+            background-color: #0c474b;
+            text-align: center;
+            padding: 1rem 2rem;
+            margin-top: 30px;
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        display: block;
+        object-position: center;
+
+    }
+
 }
