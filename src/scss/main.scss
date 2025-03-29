@@ -173,10 +173,19 @@
 
 .disfruta {
     display: flex;
-    flex-direction: column;
     gap: 70px;
     padding-top: 70px;
     background-color: #f0ebe5;
+
+    @media all and (min-width: 320px) and (max-width: 900px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 1728px) {
+        flex-direction: row;
+        align-items: center;
+        height: 500px;
+    }
 
     &__article {
         padding-left: 30px;
@@ -185,11 +194,31 @@
         &__subtitle {
             font-size: 1.5rem;
             font-weight: 600;
+
+            @media (min-width: 900px) {
+                font-size: 1.8rem;
+            }
+
+            @media (min-width: 1728px) {
+                font-size: 2.25rem;
+                text-align: left;
+                padding-left: 10vw;
+                width: 50%;
+            }
         }
 
         &__text {
             font-size: 0.7 rem;
             font-weight: 400;
+
+            @media (min-width: 900px) {}
+
+            @media (min-width: 1728px) {
+                font-size: 1rem;
+                font-weight: 600;
+                text-align: left;
+                max-width: 20ch
+            }
         }
 
         &__btn {
@@ -202,17 +231,33 @@
             text-align: center;
             padding: 1rem 2rem;
             margin-top: 30px;
+
+            @media (min-width: 1728px) {
+                text-align: left;
+            }
         }
 
     }
 
-    &__img {
+    &__img-wrapper {
         width: 100%;
-        height: 500px;
-        object-fit: cover;
-        display: block;
-        object-position: center;
 
+        @media (min-width: 1728px) {
+            width: 50%;
+            height: 100%;
+        }
+
+        @media (min-width: 1728px) {
+            width: 50%;
+            height: 100%;
+        }
     }
 
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        object-position: right;
+    }
 }
