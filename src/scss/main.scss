@@ -79,9 +79,8 @@
     padding-inline: 30px;
     padding-bottom: 250px;
     margin-top: 30px;
-    text-align: center;
     gap: 2rem;
-    flex: 1;
+
 
     @media (min-width: 900px) {
         align-items: flex-start;
@@ -90,7 +89,8 @@
     }
 
     &__text {
-        padding-bottom: 30px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         font-size: 1.5rem;
 
         @media (min-width: 900px) {
