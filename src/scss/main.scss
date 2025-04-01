@@ -408,14 +408,12 @@
         align-items: center;
         gap: 1rem;
 
-        @media (min-width: 900px) {}
-    }
+        &__flecha {
+            align-self: flex-end;
 
-    &__flecha {
-        align-self: flex-end;
-
-        @media (min-width: 1728px) {
-            padding-right: 5rem;
+            @media (min-width: 1728px) {
+                padding-right: 5rem;
+            }
         }
     }
 }
